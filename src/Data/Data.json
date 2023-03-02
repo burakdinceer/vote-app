@@ -2,23 +2,27 @@
     {
         "id":"1",
         "name":"Burak",
-        "url":"wwww.burak.com"
+        "url":"wwww.burak.com",
+        "vote":1
        
     },
     {   "id":"2",
         "name":"Tolga",
-        "url":"wwww.tolga.com"
+        "url":"wwww.tolga.com",
+        "vote":1
        
     },
     {   "id":"3",
         "name":"Ertugrul",
-        "url":"wwww.ertugrul.com"
+        "url":"wwww.ertugrul.com",
+        "vote":1
         
         
     },
     {   "id":"4",
         "name":"Mert",
-        "url":"wwww.mert.com"
+        "url":"wwww.mert.com",
+        "vote":1
        
     }
 ]
