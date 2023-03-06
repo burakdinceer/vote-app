@@ -9,20 +9,20 @@
     {   "id":"2",
         "name":"Tolga",
         "url":"wwww.tolga.com",
-        "vote":1
+        "vote":5
        
     },
     {   "id":"3",
         "name":"Ertugrul",
         "url":"wwww.ertugrul.com",
-        "vote":1
+        "vote":3
         
         
     },
     {   "id":"4",
         "name":"Mert",
         "url":"wwww.mert.com",
-        "vote":1
+        "vote":10
        
     }
 ]
