@@ -86,10 +86,14 @@ export const commentsSlice = createSlice(({
                  
                  state.list = data
                  
-            }    
-
+            } ,
+          addListItem(state,action){
+            state.list=[...state.list,action.payload]
+            console.log(action)
+          }    
+          
     }
 }))
 
-export const {upVoteComment,downVoteComment,mostVote,lessVote} =commentsSlice.actions
+export const {upVoteComment,downVoteComment,mostVote,lessVote,addListItem} =commentsSlice.actions
 export default commentsSlice.reducer

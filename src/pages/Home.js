@@ -2,13 +2,13 @@ import React from 'react'
 import Header from '../components/Header/Header'
 import List from '../components/List/List'
 import Sort from '../components/Sort/Sort'
-import Submit from '../components/Submit/Submit'
+import SubmitButton from '../components/Submit/SubmitButton'
 
 const Home = () => {
   return (
     <div>
         <div><Header/></div>
-        <div><Submit/></div>
+        <div><SubmitButton/></div>
         <div><Sort/></div>
         <div><List/></div>
     </div>
