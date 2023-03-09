@@ -16,6 +16,7 @@ const Submit = () => {
     console.log(event )
     event.preventDefault();
     dispatch(addListItem(formData))
+    alert('STACK OVERFLOW added')
     
   };
    const handleChange = (event) => {

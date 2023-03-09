@@ -29,9 +29,7 @@ const initialState = {
         {   id:"4",
             name:"Mert",
             url:"wwww.mert.com",
-            upvote:10,
-           
-           
+            upvote:10,           
         }
     ]
 }
@@ -70,7 +68,7 @@ export const commentsSlice = createSlice(({
         },
         lessVote(state,action){
           
-            const data = state.list.sort((a, b) => {
+            state.list.sort((a, b) => {
              
                     if (a.upvote < b.upvote) {
                       return 1;
@@ -83,17 +81,28 @@ export const commentsSlice = createSlice(({
                     return 0;
                 
                   });
+                
                  
-                 state.list = data
                  
             } ,
           addListItem(state,action){
             state.list=[...state.list,action.payload]
-            console.log(action)
-          }    
+           
+          },
+          sortDataList(state,action){
+           state.list.sort((a,b) => {
+              return b.upvote - a.upvote
+            })
+           
+          },
+          deleteData(state,action){
+            const {commentId} = action.payload
+            const newData = state.list.filter((c) => c.id !== commentId)
+            state.list = newData
+          }
           
     }
 }))
 
-export const {upVoteComment,downVoteComment,mostVote,lessVote,addListItem} =commentsSlice.actions
+export const {upVoteComment,downVoteComment,mostVote,lessVote,addListItem,sortDataList,deleteData} =commentsSlice.actions
 export default commentsSlice.reducer
